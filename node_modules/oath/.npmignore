@@ -1,0 +1,6 @@
+/docs/
+/test/
+/coverage/
+.travis.yml
+Makefile
+*.swp
