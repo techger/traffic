@@ -1,8 +1,9 @@
 .Visitor {
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 80%;
+    width: 40%;
     margin: 10px;
+    float: left;
 }
 
 .Visitor-header {
