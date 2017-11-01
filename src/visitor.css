@@ -4,14 +4,12 @@
     float: left;
     border: 1px solid #ccc;
 }
-
 .Visitor-header {
     background-color: #f6f8fa;
     color: #123;
     padding: 10px;
     border: 1px solid #dfe2e5;
 }
-
 .Visitor-header a {
     text-decoration: none;
     text-decoration-style: wavy;
@@ -25,7 +23,6 @@
     display: flex;
     
 }
-
 .Visitor-footer-stat {
     display: flex;
     flex-direction: column;
@@ -35,7 +32,6 @@
     padding: 5px;
     font-size: 0.8em;
 }
-
 .Visitor-footer-stat-num {
     font-weight: 700;
 }
