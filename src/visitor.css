@@ -1,8 +1,6 @@
 .Visitor {
     border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 40%;
-    margin: 10px;
+    width: 50%;
     float: left;
 }
 
