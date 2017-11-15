@@ -78,6 +78,14 @@ export default class Visitor extends Component {
                         <span className="Visitor-footer-stat-num">{visitorDetail.uniques}</span>
                         <span>Unique visitors</span>
                     </div>
+                    <div className="Visitor-footer-stat">
+                        <span className="Visitor-footer-stat-num">{visitorDetail.stargazers_count}</span>
+                        <span>Stars</span>
+                    </div>
+                    <div className="Visitor-footer-stat">
+                        <span className="Visitor-footer-stat-num">{visitorDetail.forks_count}</span>
+                        <span>Forks</span>
+                    </div>
                 </footer>
             </div>
         );

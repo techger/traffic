@@ -5,7 +5,7 @@ const Promise = require('promise');
 const l = console.log;
 
 getAuth = () => {
-    const password = "fc9d4691a7738e09b491345e55bb55329ee78267";
+    const password = "b5ae07ce24c9310febe156de310e77559442514b";
 
     return {
         username: "tortuvshin",
