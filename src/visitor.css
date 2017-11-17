@@ -7,29 +7,16 @@
 .Visitor-header {
     background-color: #f6f8fa;
     color: #123;
-    float: left;
+    display: flow-root;
+    width: 100%;
     padding: 10px;
     border: 1px solid #dfe2e5;
 }
-.Visitor-header-stat a {
+.Visitor-header a {
     width: 100%;
     float: left;
     text-decoration: none;
     text-decoration-style: wavy;
-}
-
-
-.Visitor-header-stat {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    border: 1px solid #dfe2e5;
-    padding: 5px;
-    font-size: 0.8em;
-}
-.Visitor-header-stat-num {
-    font-weight: 700;
 }
 
 .Visitor-header a:visited {
@@ -39,11 +26,10 @@
 .Visitor-header p {
     width: 100%;
     float: left;
-    
-}
-
-.Visitor-content {
-    float: left;    
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    font-size: 12px;
 }
 
 .Visitor-footer {

@@ -57,7 +57,7 @@ UserCard.propTypes = {
 const Title = ({ name, login, url }) => {
     return (
         <div className="UserCard-title">
-            <span>Visitor Graph for {name} (<a href={url}>{login}</a>)</span>
+            <span>Graph for {name} (<a href={url}>{login}</a>)</span>
         </div>
     );
 };
