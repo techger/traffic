@@ -62,13 +62,15 @@ export default class Visitor extends Component {
         return (
             <div className="Visitor">
                 <header className="Visitor-header">
-                    <a href={trafficURL}>
-                        {repo.name}
-                        {repo.language}
-                    </a>
-                    <p href={trafficURL}>
-                        {repo.description}
-                    </p>
+                    
+                    <div className="Visitor-header-stat">
+                        <span className="Visitor-header-stat-num">
+                            <a href={trafficURL}>{repo.name}</a>
+                        </span>
+                    </div>
+                    <div className="Visitor-header-stat">
+                        <span className="Visitor-header-stat-num">{repo.language}</span>
+                    </div>
                 </header>
                 <section className="Visitor-content">
                     {chart}
