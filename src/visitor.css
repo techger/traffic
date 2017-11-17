@@ -11,12 +11,20 @@
     border: 1px solid #dfe2e5;
 }
 .Visitor-header a {
+    width: 100%;
+    float: left;
     text-decoration: none;
     text-decoration-style: wavy;
 }
 
 .Visitor-header a:visited {
     color: pink;
+}
+
+.Visitor-header p {
+    width: 100%;
+    float: left;
+    
 }
 
 .Visitor-footer {

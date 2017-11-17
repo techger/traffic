@@ -64,7 +64,11 @@ export default class Visitor extends Component {
                 <header className="Visitor-header">
                     <a href={trafficURL}>
                         {repo.name}
+                        {repo.language}
                     </a>
+                    <p href={trafficURL}>
+                        {repo.description}
+                    </p>
                 </header>
                 <section className="Visitor-content">
                     {chart}
@@ -79,11 +83,11 @@ export default class Visitor extends Component {
                         <span>Unique visitors</span>
                     </div>
                     <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.stargazers_count}</span>
+                        <span className="Visitor-footer-stat-num">{repo.stargazers_count}</span>
                         <span>Stars</span>
                     </div>
                     <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.forks_count}</span>
+                        <span className="Visitor-footer-stat-num">{repo.forks_count}</span>
                         <span>Forks</span>
                     </div>
                 </footer>
