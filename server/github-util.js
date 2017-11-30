@@ -5,7 +5,7 @@ const Promise = require('promise');
 const l = console.log;
 
 getAuth = () => {
-    const password = "4c188b411736f9c303feca63c5cd18916f93e835";
+    const password = process.env.GITHUB_DEVELOPER_KEY;
 
     return {
         username: "tortuvshin",
