@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './UserCard.css';
 
 const UserCard = ({ userDetail }) => {
-    const { avatar_url, bio, blog, name, login, html_url, followers, followers_url, following, following_url, location } = userDetail;
+    const { avatar_url, bio, blog, name, login, html_url, followers, followers_url, following, following_url, location, public_repos, total_private_repos, repos_url } = userDetail;
 
 
     // const backgroundStyle = {
@@ -41,8 +41,10 @@ const UserCard = ({ userDetail }) => {
                     </div>
                     {
                         <div className="UserCard-follow">
-                            <span>Followers: <a href={followers_url}>{followers}</a></span>
-                            <span>Following: <a href={following_url}>{following}</a></span>
+                            <span>Public repos: <a href={repos_url}>{public_repos} </a></span>
+                            <span>Private repos: <a href={repos_url}>{total_private_repos} </a></span>
+                            <span>Followers: <a href={followers_url}>{followers} </a></span>
+                            <span>Following: <a href={following_url}>{following} </a></span>
                         </div>
                     }
                 </section>
@@ -57,7 +59,7 @@ UserCard.propTypes = {
 const Title = ({ name, login, url }) => {
     return (
         <div className="UserCard-title">
-            <span>Visitor Graph for {name} (<a href={url}>{login}</a>)</span>
+            <span>Graph for {name} (<a href={url}>{login}</a>)</span>
         </div>
     );
 };
