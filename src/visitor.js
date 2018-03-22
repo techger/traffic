@@ -60,33 +60,35 @@ export default class Visitor extends Component {
         let trafficURL = `${repo.html_url}/graphs/traffic`;
 
         return (
-            <div className="Visitor">
-                <header className="Visitor-header">
-                    <a href={trafficURL}>
-                        {repo.name}
-                    </a>
-                </header>
-                <section className="Visitor-content">
-                    {chart}
-                </section>
-                <footer className="Visitor-footer">
-                    <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.count}</span>
-                        <span>Views</span>
-                    </div>
-                    <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.uniques}</span>
-                        <span>Unique visitors</span>
-                    </div>
-                    <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.stargazers_count}</span>
-                        <span>Stars</span>
-                    </div>
-                    <div className="Visitor-footer-stat">
-                        <span className="Visitor-footer-stat-num">{visitorDetail.forks_count}</span>
-                        <span>Forks</span>
-                    </div>
-                </footer>
+            <div className="visitors-body">
+                <div className="Visitor">
+                    <header className="Visitor-header">
+                        <a href={trafficURL}>
+                            {repo.name}
+                        </a>
+                    </header>
+                    <section className="Visitor-content">
+                        {chart}
+                    </section>
+                    <footer className="Visitor-footer">
+                        <div className="Visitor-footer-stat">
+                            <span className="Visitor-footer-stat-num">{visitorDetail.count}</span>
+                            <span>Views</span>
+                        </div>
+                        <div className="Visitor-footer-stat">
+                            <span className="Visitor-footer-stat-num">{visitorDetail.uniques}</span>
+                            <span>Unique visitors</span>
+                        </div>
+                        <div className="Visitor-footer-stat">
+                            <span className="Visitor-footer-stat-num">{visitorDetail.stargazers_count}</span>
+                            <span>Stars</span>
+                        </div>
+                        <div className="Visitor-footer-stat">
+                            <span className="Visitor-footer-stat-num">{visitorDetail.forks_count}</span>
+                            <span>Forks</span>
+                        </div>
+                    </footer>
+                </div>
             </div>
         );
     }
